@@ -1384,3 +1384,11 @@ strong.chat_time {
     transform: scale(5);
   }
 }
+
+.message-chat {
+  background: #033558d5;
+  right: 431px;
+  width: 180px;
+  bottom: 15px;
+  padding-bottom: 15px;
+}
