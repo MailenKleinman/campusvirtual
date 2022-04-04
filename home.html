@@ -25,96 +25,141 @@
 	
 <body >
 
-
-	<div class="align animated fadeInLeft">		
-	<nav class="navigation navigation--inline">
-		<ul>
-		<li>
-			<span class="icon-move" style="cursor: grabbing;" href="#">
-			<svg class="icon icon--2x">
-				<use xlink:href="#icon-dots" />
-			</svg>
-			<span class="invisible">Move</span>
-		</span>
-		</li>
-		<li>
-			<a data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">		
-				<svg class="icon icon--2x">
-					<use xlink:href="#icon-bars" />
-				</svg>
-			</a>
-		</li>
-		<li>
-			<a data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">		
-				<svg class="icon icon--2x">
-					<use xlink:href="#icon-settings" />
-				</svg>
-			</a>
-		</li>
-		<li>
-			<a data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">		
-				<svg class="icon icon--2x">
-					<use xlink:href="#icon-map" />
-				</svg>
-			</a>
-		</li>
-		<li>
-			<a data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">		
-				<svg class="icon icon--2x">
-					<use xlink:href="#icon-chat" />
-				</svg>
-			</a>
-		</li>
-		</ul>
+    
 	
-	</nav>
 
-	<div class="collapse" id="collapseExample1">
-		<div class="modal-menu1 title-modal">
-			MENÚ
-		</div>
-	</div>
-	<div class="collapse" id="collapseExample2">
-		<div class="modal-menu2 title-modal">
-			SETTINGS
-		</div>
-	</div>
-	<div class="collapse" id="collapseExample3">
-		<div class="modal-menu3 title-modal">
-			MAP
-			<!--<div>
-				<img class="rounded mx-auto d-block img-map" src="./images/map.png" alt="">
-			</div>-->
-		</div>
+    <div class="area"></div>
+    <nav class="main-menu">
+        <ul>
+           
+            <li class="has-subnav mt-4">
+                <a href="#">
+					<svg class="fa-menu icon icon--2x">
+						<use xlink:href="#icon-bars" />
+					</svg>
+                    <span class="nav-text">
+                        General
+                    </span>
+                </a>
+                
+            </li>
+            <li class="mt-4">
+                <a href="http://justinfarrow.com">
+					<svg class="fa-menu icon icon--2x">
+						<use xlink:href="#icon-settings" />
+					</svg>
+                    <span class="nav-text">
+                        Settings
+                    </span>
+                </a>
+            
+            </li>
+            <li class="mt-4">
+                <a href="#">
+                    <svg class="fa-menu icon icon--2x">
+						<use xlink:href="#icon-map" />
+					</svg>
+                    <span class="nav-text">
+                        Map
+                    </span>
+                </a>
+            </li>
+			<li class="mt-4">
+                <a href="#">
+                    <svg class="fa-menu icon icon--2x">
+						<use xlink:href="#icon-world" />
+					</svg>
+                    <span class="nav-text">
+                        Language
+                    </span>
+                </a>
+            </li>	
+			<li class="mt-4">
+                <a href="#">
+                    <svg class="fa-menu icon icon--2x">
+						<use xlink:href="#icon-close" />
+					</svg>
+                    <span class="nav-text">
+                        Exit
+                    </span>
+                </a>
+            </li>	
 		
-	</div>
-	<div class="collapse" id="collapseExample4">
-		<div class="modal-menu4 title-modal">
-			CHAT
-		</div>
-	</div>
-	</div>
-	  
+
+			<div data-toggle="tooltip" id="circularMenu1" class="circular-menu circular-menu-left animated fadeInLeft">
 	
-	<!--<img class="logo-home animated fadeInLeft" src="./images/img-02.png" alt="">-->
+				<a class="floating-btn" onmouseover="document.getElementById('circularMenu1').classList.toggle('active');">
+					<svg class="icon icon--2x">
+						<use xlink:href="#icon-face" />
+					</svg>
+				</a>
+				
+				<menu class="items-wrapper">
+					
+					<i data-toggle="tooltip" data-placement="top" data-original-title="F3" href="#" class="menu-item fa fa-hand-paper-o"></i>
+					<i data-toggle="tooltip" data-placement="top" data-original-title="F4" href="#" class="menu-item fa fa-heart-o"></i>
+					<i data-toggle="tooltip" data-placement="top" data-original-title="F5" href="#" class="menu-item fa fa-thumbs-o-up"></i>
+					<i data-toggle="tooltip" data-placement="top" data-original-title="F6" href="#" class="menu-item fa fa-thumbs-o-down"></i>
+					
+				</menu>
+				
+			</div>
+		
+
+        </ul>
+
+		<div class="fabs">
+			<div class="chat" style="background: #033558d5;">
+			  <div class="chat_header">
+				<span id="chat_head">BUBLE</span>
+				<div class="chat_loader"></div>
+				<div class="chat_option" style="color: white; margin: 1%;">
+					
+						BUBBLE 
+						<svg class=" icon" style="margin-bottom: 4px;">
+							<use xlink:href="#icon-dropdown" />
+						</svg>
+					
+				  <ul>
+					<li><span class="chat_color" style="color: #033558;">CONFERENCE</span></li>
+					
+					<li><span class="chat_color" style="color: #033558;">MEETING ROOM</span></li>
+					
+					<li><span class="chat_color" style="color: #033558;">AUDITORY</span></li>
+				  </ul>
+				</div>
+		  
+			  </div>
+			  <div class="chat_login">
+				  <a id="chat_send_email" class="fab"><i class="zmdi zmdi-email"></i></a>
+				  <input id="chat_log_email" placeholder="Email"></input>
+			  <div class="chat_login_alert"></div>
+			  </div>
+			  <div id="chat_converse" class="chat_converse">
+				<span class="chat_msg_item chat_msg_item_admin">
+					  <div class="chat_avatar">
+					  </div>Hi!</span>
+				<span class="chat_msg_item chat_msg_item_user">
+					  <div class="chat_avatar">
+					  </div>Hello, how are you?</span>
+			  </div>
+			  <div class="fab_field">
+				<a id="fab_listen" class="fab"><i class="fa fa-paperclip"></i></a>
+				<a id="fab_send" class="fab"><i class="fa fa-send"></i></a>
+				<textarea id="chatSend" name="chat_message" placeholder="Write a message" class="chat_field chat_message"></textarea>
+			  </div>
+			</div>
+			<a target="_blank" id="fab_help" class="fab" style="background: #033558; color: #70c8ee;"><i data-toggle="tooltip" data-placement="top" data-original-title="Volume" class="fa fa-volume-off"></i></a>
+			<a target="_blank" id="fab_help" class="fab" style="background: #033558; color: #70c8ee;"><i data-toggle="tooltip" data-placement="top" data-original-title="Mute" class="fa fa-microphone"></i></a>
+			<a id="prime" class="fab" style="background: #033558;color: #70c8ee;font-size: small;">
+				<i data-toggle="tooltip" data-placement="top" data-original-title="Chat" class="fa fa-comment"></i>
+			</a>
+		</div>		
+      
+    </nav>
+
 	
 	  
-	<div id="circularMenu1" class="circular-menu circular-menu-left animated fadeInLeft">
-	  
-		<a class="floating-btn" onmouseover="document.getElementById('circularMenu1').classList.toggle('active');">
-			<svg class="icon icon--2x">
-				<use xlink:href="#icon-face" />
-			</svg>
-		</a>
-	  
-		<menu class="items-wrapper">
-		  <a href="#" class="menu-item fa fa-hand-paper-o"></a>
-		  <a href="#" class="menu-item fa fa-heart-o"></a>
-		  <a href="#" class="menu-item fa fa-thumbs-o-up"></a>
-		  <a href="#" class="menu-item fa fa-thumbs-o-down"></a>
-		</menu>
-	  
-	</div>
 	
 	
 
@@ -178,8 +223,17 @@
 		<symbol id="icon-face" viewBox="0 0 15 15">
 			<path d="M 7.49991 0.876892 C 3.84222 0.876892 0.877075 3.84204 0.877075 7.49972 C 0.877075 11.1574 3.84222 14.1226 7.49991 14.1226 C 11.1576 14.1226 14.1227 11.1574 14.1227 7.49972 C 14.1227 3.84204 11.1576 0.876892 7.49991 0.876892 Z M 1.82708 7.49972 C 1.82708 4.36671 4.36689 1.82689 7.49991 1.82689 C 10.6329 1.82689 13.1727 4.36671 13.1727 7.49972 C 13.1727 10.6327 10.6329 13.1726 7.49991 13.1726 C 4.36689 13.1726 1.82708 10.6327 1.82708 7.49972 Z M 5.03747 9.21395 C 4.87949 8.98746 4.56782 8.93193 4.34133 9.08991 C 4.11484 9.24789 4.05931 9.55956 4.21729 9.78605 C 4.93926 10.8211 6.14033 11.5 7.50004 11.5 C 8.85974 11.5 10.0608 10.8211 10.7828 9.78605 C 10.9408 9.55956 10.8852 9.24789 10.6587 9.08991 C 10.4323 8.93193 10.1206 8.98746 9.9626 9.21395 C 9.41963 9.99238 8.51907 10.5 7.50004 10.5 C 6.481 10.5 5.58044 9.99238 5.03747 9.21395 Z M 5.37503 6.84998 C 5.85828 6.84998 6.25003 6.45815 6.25003 5.97498 C 6.25003 5.4918 5.85828 5.09998 5.37503 5.09998 C 4.89179 5.09998 4.50003 5.4918 4.50003 5.97498 C 4.50003 6.45815 4.89179 6.84998 5.37503 6.84998 Z M 10.5 5.97498 C 10.5 6.45815 10.1083 6.84998 9.62503 6.84998 C 9.14179 6.84998 8.75003 6.45815 8.75003 5.97498 C 8.75003 5.4918 9.14179 5.09998 9.62503 5.09998 C 10.1083 5.09998 10.5 5.4918 10.5 5.97498 Z">
 		</symbol>	
+		<symbol id="icon-close" viewBox="0 0 25 25">
+			<path d="M6.22566 4.81096C5.83514 4.42044 5.20197 4.42044 4.81145 4.81096C4.42092 5.20148 4.42092 5.83465 4.81145 6.22517L10.5862 11.9999L4.81151 17.7746C4.42098 18.1651 4.42098 18.7983 4.81151 19.1888C5.20203 19.5793 5.8352 19.5793 6.22572 19.1888L12.0004 13.4141L17.7751 19.1888C18.1656 19.5793 18.7988 19.5793 19.1893 19.1888C19.5798 18.7983 19.5798 18.1651 19.1893 17.7746L13.4146 11.9999L19.1893 6.22517C19.5799 5.83465 19.5799 5.20148 19.1893 4.81096C18.7988 4.42044 18.1657 4.42044 17.7751 4.81096L12.0004 10.5857L6.22566 4.81096Z">
+		</symbol>
+		<symbol id="icon-world" viewBox="0 0 80 80">
+			<path d="   M8.965,16.584c-0.095,4.4-1.613,8.942,0.041,12.994c0.389,0.951,0.945,1.841,1.193,2.838c0.359,1.452,0.063,3.104,0.877,4.36   c1.063,1.641,3.389,1.729,5.343,1.639c2.481-0.114,5.461-0.554,6.456-2.828c0.809,1.09,1.617,2.178,2.426,3.268   c0.226,0.305,0.458,0.614,0.775,0.818c1.208,0.777,2.803-0.404,3.341-1.736c0.536-1.332,0.556-2.873,1.341-4.076   c2.326-0.211,3.952,2.295,4.513,4.563c0.562,2.268,0.739,4.845,2.439,6.447c1.422,1.341,3.79,1.869,4.357,3.739   c0.731,2.41-2.266,4.998-1.128,7.246c2.771,0.068,5.6,0.13,8.25-0.684c2.65-0.813,5.139-2.668,5.973-5.313   c0.844-2.68,0.033-6.052,2.043-8.016c0.673-0.658,1.582-1.043,2.222-1.734c1.299-1.404,1.122-3.58,0.85-5.473   c-0.292-2.028-0.599-4.055-0.923-6.078c-0.282-1.768-0.586-3.564-1.38-5.169c-1.174-2.372-3.324-4.124-5.616-5.446   c-2.291-1.324-4.772-2.289-7.095-3.557c-1.388-0.757-2.732-1.629-4.238-2.112c-1.882-0.603-3.899-0.563-5.876-0.572   c-2.473-0.012-5.174-0.201-6.995-1.873c-0.757-0.696-1.294-1.594-1.938-2.395c-0.712-0.885-1.556-1.641-2.457-2.333   c3.625-1.396,7.559-2.169,11.676-2.169c17.948,0,32.499,14.551,32.499,32.5s-14.551,32.5-32.499,32.5   c-17.949,0-32.5-14.551-32.5-32.5C2.934,28.404,5.172,21.901,8.965,16.584z">
+		</symbol>
+		<symbol id="icon-dropdown" viewBox="0 0 20 20">
+			<path d="M18.5303 9.46967C18.8232 9.76256 18.8232 10.2374 18.5303 10.5303L12.5303 16.5303C12.2374 16.8232 11.7626 16.8232 11.4697 16.5303L5.46967 10.5303C5.17678 10.2374 5.17678 9.76256 5.46967 9.46967C5.76256 9.17678 6.23744 9.17678 6.53033 9.46967L12 14.9393L17.4697 9.46967C17.7626 9.17678 18.2374 9.17678 18.5303 9.46967Z">
+		</symbol>
 	</svg>
-	  
+
 
 <!--===============================================================================================-->	
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
@@ -197,11 +251,296 @@
 	</script>
 
 	<script>
-		jQuery('a').click( function(e) {
-    jQuery('.collapse').collapse('hide');
-});
+	jQuery('a').click( function(e) {
+	jQuery('.collapse').collapse('hide');
+	});
 	</script>
 
+	<script>
+	$(document).ready(function () {
+	$("body").tooltip({   
+	selector: "[data-toggle='tooltip']",
+	container: "body"
+	})
+	.popover({
+	selector: "[data-toggle='popover']",
+	container: "body",
+	html: true
+	});
+	});
+	</script>
+
+		<script>
+		toggleFab();
+
+		//define chat color
+		if (typeof(Storage) !== "undefined") {
+		if (localStorage.getItem('fab-color') === null) {
+		localStorage.setItem("fab-color", "blue");
+		}
+		$('.fabs').addClass(localStorage.getItem("fab-color"));
+		} else {
+		$('.fabs').addClass("blue");
+		}
+
+		//Fab click
+		$('#prime').click(function() {
+		toggleFab();
+		});
+
+		
+
+		//Toggle chat and links
+		function toggleFab() {
+		$('.prime').toggleClass('zmdi-plus');
+		$('.prime').toggleClass('zmdi-close');
+		$('.prime').toggleClass('is-active');
+		$('#prime').toggleClass('is-float');
+		$('.chat').toggleClass('is-visible');
+		$('.fab').toggleClass('is-visible');
+
+		}
+
+		//User msg
+		function userSend(text) {
+		var img = '<i class="zmdi zmdi-account"></i>';
+		$('#chat_converse').append('<div class="chat_msg_item chat_msg_item_user"><div class="chat_avatar">' + img + '</div>' + text + '</div>');
+		$('#chatSend').val('');
+		if ($('.chat_converse').height() >= 256) {
+		$('.chat_converse').addClass('is-max');
+		}
+		$('.chat_converse').scrollTop($('.chat_converse')[0].scrollHeight);
+		}
+
+		//Admin msg
+		function adminSend(text) {
+		$('#chat_converse').append('<div class="chat_msg_item chat_msg_item_admin"><div class="chat_avatar"><i class="zmdi zmdi-headset-mic"></i></div>' + text + '</div>');
+		botSpeak(text);
+		if ($('.chat_converse').height() >= 256) {
+		$('.chat_converse').addClass('is-max');
+		}
+		$('.chat_converse').scrollTop($('.chat_converse')[0].scrollHeight);
+		}
+
+		//Send input using enter and send key
+		$('#chatSend').bind("enterChat", function(e) {
+		userSend($('#chatSend').val());
+		adminSend('Example msg');
+		});
+		$('#fab_send').bind("enterChat", function(e) {
+		userSend($('#chatSend').val());
+		adminSend('Example msg');
+		});
+		$('#chatSend').keypress(function(event) {
+		if (event.keyCode === 13) {
+		event.preventDefault();
+		if (jQuery.trim($('#chatSend').val()) !== '') {
+		$(this).trigger("enterChat");
+		}
+		}
+		});
+
+		$('#fab_send').click(function(e) {
+		if (jQuery.trim($('#chatSend').val()) !== '') {
+		$(this).trigger("enterChat");
+		}
+		});
+
+		//Listen user voice
+		$('#fab_listen').click(function() {
+		var recognition = new webkitSpeechRecognition();
+
+		loadBeat(true);
+		recognition.onresult = function(event) {
+		var text = event.results[0][0].transcript;
+		$('#chatSend').val(text);
+		}
+		recognition.onerror = function(event) {
+		console.error(event);
+		recognition.stop()
+
+		loadBeat(false);
+
+		}
+
+		recognition.onsoundend = function () {
+		recognition.stop()
+		loadBeat(false);
+		}
+
+		// recognition.continuous = true;
+		recognition.lang = "en-US";
+		recognition.interimResults = true;
+		recognition.start();
+		});
+
+		// Color options
+		$(".chat_color").click(function(e) {
+		$('.fabs').removeClass(localStorage.getItem("fab-color"));
+		$('.fabs').addClass($(this).attr('color'));
+		localStorage.setItem("fab-color", $(this).attr('color'));
+		});
+
+		$('.chat_option').click(function(e) {
+		$(this).toggleClass('is-dropped');
+		});
+
+		//Loader effect
+		function loadBeat(beat) {
+		beat ? $('.chat_loader').addClass('is-loading') : $('.chat_loader').removeClass('is-loading');
+		}
+
+		// Ripple effect
+		var target, ink, d, x, y;
+		$(".fab").click(function(e) {
+		target = $(this);
+		//create .ink element if it doesn't exist
+		if (target.find(".ink").length == 0)
+		target.prepend("<span class='ink'></span>");
+
+		ink = target.find(".ink");
+		//incase of quick double clicks stop the previous animation
+		ink.removeClass("animate");
+
+		//set size of .ink
+		if (!ink.height() && !ink.width()) {
+		//use parent's width or height whichever is larger for the diameter to make a circle which can cover the entire element.
+		d = Math.max(target.outerWidth(), target.outerHeight());
+		ink.css({
+		height: d,
+		width: d
+		});
+		}
+
+		//get click coordinates
+		//logic = click coordinates relative to page - parent's position relative to page - half of self height/width to make it controllable from the center;
+		x = e.pageX - target.offset().left - ink.width() / 2;
+		y = e.pageY - target.offset().top - ink.height() / 2;
+
+		//set the position and add class .animate
+		ink.css({
+		top: y + 'px',
+		left: x + 'px'
+		}).addClass("animate");
+		});
+
+		//Cookies handler
+		function createCookie(name, value, days) {
+		var expires;
+
+		if (days) {
+		var date = new Date();
+		date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+		expires = "; expires=" + date.toGMTString();
+		} else {
+		expires = "";
+		}
+		document.cookie = encodeURIComponent(name) + "=" + encodeURIComponent(value) + expires + "; path=/";
+		}
+
+		function readCookie(name) {
+		console.log(name)
+		var nameEQ = encodeURIComponent(name) + "=";
+		var ca = document.cookie.split(';');
+		for (var i = 0; i < ca.length; i++) {
+		var c = ca[i];
+		while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+		if (c.indexOf(nameEQ) > -1) return decodeURIComponent(c.substring(nameEQ.length, c.length));
+		}
+		return null;
+		}
+
+		function eraseCookie(name) {
+		createCookie(name, "", -1);
+		}
+
+		//User login
+		function logUser() {
+		hideChat(true);
+		$('#chat_send_email').click(function(e) {
+		var email = $('#chat_log_email').val();
+		if (jQuery.trim(email) !== '' && validateEmail(email)) {
+		$('.chat_login_alert').html('');
+		loadBeat(true);
+		createCookie('fab_chat_email', email, 100);
+		if (checkEmail(email)) {
+		//email exist and get and set username in session
+		hideChat(false);
+		} else {
+		setTimeout(createUsername, 3000);
+		}
+		} else {
+		$('.chat_login_alert').html('Invalid email.');
+		}
+		});
+		}
+
+		function createUsername() {
+		loadBeat(false);
+		$('#chat_log_email').val('');
+		$('#chat_send_email').children('i').removeClass('zmdi-email').addClass('zmdi-account');
+		$('#chat_log_email').attr('placeholder', 'Username');
+		$('#chat_send_email').attr('id', 'chat_send_username');
+		$('#chat_log_email').attr('id', 'chat_log_username');
+		$('#chat_send_username').click(function(e) {
+		var username = $('#chat_log_username').val();
+		if (jQuery.trim(username) !== '') {
+		loadBeat(true);
+		if (checkUsername(username)) {
+		//username is taken
+		$('.chat_login_alert').html('Username is taken.');
+		} else {
+		//save username in DB and session
+		createCookie('fab_chat_username', username, 100);
+		hideChat(false);
+		}
+		} else {
+		$('.chat_login_alert').html('Please provide username.');
+		}
+		});
+		}
+
+		function hideChat(hide) {
+		if (hide) {
+		$('.chat_converse').css('display', 'none');
+		$('.fab_field').css('display', 'none');
+		} else {
+		$('#chat_head').html(readCookie('fab_chat_username'));
+		// Help
+		$('#fab_help').click(function(){userSend('You are muted');});
+		$('.chat_login').css('display', 'none');
+		$('.chat_converse').css('display', 'block');
+		$('.fab_field').css('display', 'inline-block');
+		}
+		}
+
+		function checkEmail(email) {
+		//check if email exist in DB
+		return false;
+		}
+
+		function checkUsername(username) {
+		//check if username exist in DB
+		return false;
+		}
+
+		function validateEmail(email) {
+		var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+		if (!emailReg.test(email)) {
+		return false;
+		} else {
+		return true;
+		}
+		}
+
+		if (readCookie('fab_chat_username') === null || readCookie('fab_chat_email') === null) {
+		logUser();
+		} else {
+
+		}
+
+		hideChat(false);
+	</script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
 

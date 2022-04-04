@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
 <!--===============================================================================================-->	
@@ -23,9 +24,31 @@
 </head>
 <body>
 	
+	<div class="container" style="position: absolute;max-width: inherit; margin-top: 10px;">
+		<div class="d-flex">
+			<div class="p-2">
+				<button>
+					<i class="fa-solid fa-xmark" style="color: white; font-size:x-large;"></i>
+				</button>
+			</div>
+			<div class="ml-auto p-2">
+				<div class="dropdown">
+					<button class="btn dropdown-toggle" style="color: white;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<i class=" mr-1 fa-solid fa-earth-americas" style="color: white; font-size:large;"></i>
+					</button>
+					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+						<a class="dropdown-item" href="#">ENG</a>
+						<a class="dropdown-item" href="#">ESP</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
 	<div class="limiter">
 		<div class="container-login100">
-			<div class="wrap-login100 animated fadeInUp">
+			
+			<div class="wrap-login100 animated fadeIn">
 				<div class="login100-pic js-tilt" data-tilt>
 					<img style="margin-top: 10%;" src="images/img-01.png" alt="IMG">
 				</div>
@@ -48,7 +71,10 @@
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-lock" aria-hidden="true"></i>
-						</span>
+						</span>	
+						<span class="symbol-input100">
+							<i class="fa fa-eye-slash"  style="margin-left: auto;margin-right: 10%; color: #a7a7a7;" aria-hidden="true"></i>
+						</span>	
 					</div>
 					
 					<div class="container-login100-form-btn">
@@ -78,7 +104,7 @@
 	</div>
 	
 	
-
+	
 	
 <!--===============================================================================================-->	
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
