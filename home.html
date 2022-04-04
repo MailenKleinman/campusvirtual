@@ -109,23 +109,47 @@
         </ul>
 
 		<div class="fabs">
+			<div class="chat message-chat" style="background: #033558d5;">
+				<div class="chat_header">
+				  <span id="chat_head">CHATS</span>
+				  <div class="chat_loader"></div>
+				  <div class="chat_option" style="color: #70c8ee; margin: 3%;">
+					● BUBBLE 
+				  </div>
+				  <div class="chat_option" style="color: white; margin: 3%;">
+					  
+					AUDITORY 
+				  </div>
+				  <div class="chat_option" style="color: rgb(255, 52, 52); margin: 1%;">
+					  
+					CONFERENCE (1)
+					
+				  </div>
+				  <div class="chat_option" style="color: white; margin: 1%;">
+					  
+					MEETING 
+					
+				  </div>
+				  <div >
+					<a id="fab_listen" class="fab message-chat-button"><i class="fa fa-angle-right"></i></a>  </div>
+			
+				</div>
+				
+			</div>
 			<div class="chat" style="background: #033558d5;">
 			  <div class="chat_header">
-				<span id="chat_head">BUBLE</span>
+				<span id="chat_head"></span>
 				<div class="chat_loader"></div>
 				<div class="chat_option" style="color: white; margin: 1%;">
 					
 						BUBBLE 
-						<svg class=" icon" style="margin-bottom: 4px;">
-							<use xlink:href="#icon-dropdown" />
-						</svg>
 					
 				  <ul>
-					<li><span class="chat_color" style="color: #033558;">CONFERENCE</span></li>
+					<li><span class="chat_color" style="color: #033558;">OPTION 1</span></li>
 					
-					<li><span class="chat_color" style="color: #033558;">MEETING ROOM</span></li>
+					<li><span class="chat_color" style="color: #033558;">OPTION 2</span></li>
 					
-					<li><span class="chat_color" style="color: #033558;">AUDITORY</span></li>
+					<li><span class="chat_color" style="color: #033558;">OPTION 3</span></li>
 				  </ul>
 				</div>
 		  
@@ -347,7 +371,7 @@
 		});
 
 		//Listen user voice
-		$('#fab_listen').click(function() {
+		$('').click(function() {
 		var recognition = new webkitSpeechRecognition();
 
 		loadBeat(true);
