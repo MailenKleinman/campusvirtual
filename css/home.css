@@ -837,7 +837,6 @@ code {
   position: relative;
   margin: 5px 0 5px 0;
   width: 90%;
-  font-family: 'Roboto';
   font-size: 12px;
   line-height: 30px;
   font-weight: 500;
@@ -866,7 +865,6 @@ code {
   position: relative;
   margin: 9px 0 5px 0;
   width: 50%;
-  font-family: 'Roboto';
   font-size: 12px;
   line-height: 30px;
   font-weight: 500;
@@ -1387,8 +1385,17 @@ strong.chat_time {
 
 .message-chat {
   background: #033558d5;
-  right: 431px;
-  width: 180px;
-  bottom: 15px;
-  padding-bottom: 15px;
+  right: 415px;
+  width: 166px;
+  height: 185px;
+  bottom: 0;
+}
+
+.message-chat-button {
+  margin-left: 5%;
+  right: 22px;
+  top: -20px;
+  background-color: #03355800; 
+  font-size: 1.5em; 
+  box-shadow: none;
 }
