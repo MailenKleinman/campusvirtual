@@ -430,10 +430,12 @@ border-collapse:collapse;
 border-spacing:0;
 color:#70c8ee;
  font-family: arial;
-font-size: 20px;
+font-size: 14px;
 text-decoration:none;
 -webkit-transition:all .1s linear;
 transition:all .1s linear;
+margin: 5px 75px;
+font-family: 'Montserrat';
   
 }
 
@@ -489,7 +491,6 @@ padding:0;
 }
 .main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
 color:#ffffff;
-background-color:#033558;
 margin-top: 3px;
 margin-bottom: 3px;
 }
@@ -1398,4 +1399,95 @@ strong.chat_time {
   background-color: #03355800; 
   font-size: 1.5em; 
   box-shadow: none;
+}
+
+
+.accordion {
+  width: 100%;
+  max-width: 360px;
+  margin: 30px auto 20px;
+  background: rgba(255, 255, 255, 0);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.accordion .link {
+ cursor: pointer;
+ display: block;
+ padding: 15px 15px 15px 70px;
+ color: #70c8ee;
+ font-size: 14px;
+ font-weight: 700;
+ position: relative;
+ -webkit-transition: all 0.4s ease;
+ -o-transition: all 0.4s ease;
+ transition: all 0.4s ease;
+ font-family: 'Montserrat light';
+}
+
+.accordion li:last-child .link {
+ border-bottom: 0;
+}
+
+.accordion li i {
+ position: absolute;
+ top: 11px;
+ left: 11px;
+ font-size: 18px;
+ color: #70c8ee;
+ -webkit-transition: all 0.4s ease;
+ -o-transition: all 0.4s ease;
+ transition: all 0.4s ease;
+}
+
+.accordion li i.fa-chevron-down {
+ right: 12px;
+ left: auto;
+ font-size: 16px;
+}
+
+.accordion li.open .link {
+ color: #ffffff;
+}
+
+.accordion li.open i {
+ color: #ffffff;
+}
+.accordion li.open i.fa-chevron-down {
+ -webkit-transform: rotate(180deg);
+ -ms-transform: rotate(180deg);
+ -o-transform: rotate(180deg);
+ transform: rotate(359deg);
+}
+
+.accordion li.default .submenu {display: block;}
+/**
+* Submenu
+-----------------------------*/
+.submenu {
+  display: none;
+  background: #44435900;
+  font-size: 14px;
+  font-family: 'Montserrat light';
+}
+
+.submenu li {
+  border-bottom: 1px solid #70c8ee;
+}
+
+.submenu a {
+  display: block;
+  text-decoration: none;
+  color: #d9d9d9;
+  padding: 12px;
+  padding-left: 42px;
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.submenu a:hover {
+  background: #ffffff00;
+  color: rgba(227, 208, 208, 0);
 }
