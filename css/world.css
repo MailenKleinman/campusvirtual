@@ -37,7 +37,7 @@
   body, html {
       height: 100%;
       font-family: Montserrat-Regular, sans-serif;
-    background-image: url("../images/bg-02.jpg");
+    background-image: url("../images/bg_login.png");
     background-repeat : no-repeat;
     background-size: cover;
   }
@@ -47,7 +47,7 @@
       font-family: Montserrat-Regular;
       font-size: 14px;
       line-height: 1.7;
-      color: #666666;
+      color: #8f8f8f;
       margin: 0px;
       transition: all 0.4s;
       -webkit-transition: all 0.4s;
@@ -61,7 +61,8 @@
   
   a:hover {
       text-decoration: none;
-    color: #4BB0DB;
+    color: #032b48;
+    font-weight: 700;
   }
   
   /*---------------------------------------------*/
@@ -73,7 +74,7 @@
       font-family: Montserrat-Regular;
       font-size: 14px;
       line-height: 1.7;
-      color: #666666;
+      color: #8f8f8f;
       margin: 0px;
   }
   
@@ -140,14 +141,14 @@
     font-family: Montserrat-Regular;
     font-size: 13px;
     line-height: 1.5;
-    color: #999999;
+    color: #032b48;
   }
   
   .txt2 {
     font-family: Montserrat-Regular;
     font-size: 13px;
     line-height: 1.5;
-    color: #666666;
+    color: #032b48;
   }
   
   
@@ -176,8 +177,8 @@
   
   .wrap-login100 {
     width: 1035px;
-    background: #011c2fce;
-    border-radius: 10px;
+    background: #ffffff95;
+    border-radius: 6px;
     overflow: hidden;
     display: -webkit-box;
     display: -webkit-flex;
@@ -210,7 +211,7 @@
   .login100-form-title {
     font-family: Montserrat-Bold;
     font-size: 24px;
-    color: #ffffff;
+    color: #032b48;
     line-height: 1.2;
     text-align: center;
     width: 100%;
@@ -254,7 +255,7 @@
     width: 100%;
     height: 100%;
     box-shadow: 0px 0px 0px 0px;
-    color: #4BB0DB;
+    color: #1acdff;
   }
   
   .input100:focus + .focus-input100 {
@@ -293,7 +294,7 @@
     height: 100%;
     padding-left: 35px;
     pointer-events: none;
-    color: #666666;
+    color: #8f8f8f;
   
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
@@ -302,7 +303,7 @@
   }
   
   .input100:focus + .focus-input100 + .symbol-input100 {
-    color: #4BB0DB;
+    color: #1acdff;
     padding-left: 28px;
   }
   
@@ -324,13 +325,14 @@
     font-family: Montserrat-Bold;
     font-size: 15px;
     line-height: 1.5;
-    color: #fff;
+    border: solid;
+  border-color: #ffffff;
     text-transform: uppercase;
-  
+  color: #ffffff;
     width: 100%;
     height: 50px;
     border-radius: 25px;
-    background: #4BB0DB;
+    background: transparent;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -347,8 +349,10 @@
   }
   
   .login100-form-btn:hover {
-    background: #929292;
+    background: #ffffff79;
+    border-color: 1acdff;
   }
+  
   
   
   
@@ -513,8 +517,8 @@
   
   .wrap-login100-avatar {
     width: 960px;
-    background: #011c2fce;
-    border-radius: 10px;
+    background: #032b48de;
+    border-radius: 6px;
     overflow: hidden;
   
     display: -webkit-box;
@@ -528,7 +532,8 @@
   }
 
 .cardtitle{
-    color: white;
+    color: rgb(113, 113, 113);
+    font-weight: 600;
 }
 
 .cardtitle:hover{
@@ -539,7 +544,7 @@
 
 .cardimage:hover {
     cursor: pointer;
-    -webkit-filter: grayscale(0.8) ;
+    -webkit-filter: saturate(0.8) ;
    filter: grayscale(0.8) ;
 }
 
@@ -548,11 +553,10 @@
 .icongallery {
     display: grid;
     place-content: center;
-    color: #4BB0DB;
+    color: #033558;
 
 }
 
 .icongallery:hover {
     cursor: pointer;
 }
-
